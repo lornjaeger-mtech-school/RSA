@@ -7,25 +7,28 @@ namespace RSA
     {
         static void Main(string[] args)
         {
-            int p = 199, q = 167;
-            int n = p * q;
+            static int GCD(int A, int B)  //GCD by Euclidean Algorithm
+            {
+                int T;
+                while (B != 0)
+                {
+                    T = B; 
+                    B = A % B; 
+                    A = T;
+                }
+                return int.Abs(A);
+            }
+            
+            static int GeneratePrime()
+            {
+                int num = 0;
+                
 
+                return num;
+            }
+            
 
         }
         
-        static void Encode(char plain, int key)
-        {
-            // Random Changes for github
-        }
-        
-        static void EncodeMessage(string plain, int key)
-        {
-            
-        }
-
-        static void DecodeMessage(char cipher, int key)
-        {
-            
-        }
     }
 }
